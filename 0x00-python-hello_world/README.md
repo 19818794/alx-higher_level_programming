@@ -21,3 +21,4 @@ All of the following files are programs written in Python except `betty`:
 | `0-run`                    | a Shell script that runs a Python script.
 | `1-run_inline`             | a Shell script that runs Python code.
 | `2-print.py`               | prints exactly a string followed by a new line.
+| `3-print_number.py`        | prints the integer stored in a variable, followed by a string, followed by a new line.
