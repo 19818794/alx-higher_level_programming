@@ -32,3 +32,4 @@ All of the following files are programs written in Python except `betty`:
 | `lists.h`                  | a header file includes the prototypes of all functions, libraries, and structures used in task `10-check_cycle.c`.
 | `100-write.py`             | prints exactly a string to stderr and exits with status code 1.
 | `101-compile`              | compiles a Python script file.
+| `102-magic_calculation.py` | a function in Python that loads a constant and two variables, calculates an exponential, then a sum, and returns the results.
