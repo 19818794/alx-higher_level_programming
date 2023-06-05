@@ -22,3 +22,4 @@ All of the following files are programs written in Python except `betty`:
 | `1-run_inline`             | a Shell script that runs Python code.
 | `2-print.py`               | prints exactly a string followed by a new line.
 | `3-print_number.py`        | prints the integer stored in a variable, followed by a string, followed by a new line.
+| `4-print_float.py`         | prints the float stored in a variable with a precision of 2 digits.
