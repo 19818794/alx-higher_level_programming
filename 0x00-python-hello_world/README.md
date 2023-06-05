@@ -31,3 +31,4 @@ All of the following files are programs written in Python except `betty`:
 | `10-check_cycle.c`         | a function in C that checks if a singly linked list has a cycle in it.
 | `lists.h`                  | a header file includes the prototypes of all functions, libraries, and structures used in task `10-check_cycle.c`.
 | `100-write.py`             | prints exactly a string to stderr and exits with status code 1.
+| `101-compile`              | compiles a Python script file.
