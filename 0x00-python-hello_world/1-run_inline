@@ -1,0 +1,2 @@
+#!/bin/bash
+export PYFILE=main.py; echo $PYCODE > $PYFILE; python3 $PYFILE

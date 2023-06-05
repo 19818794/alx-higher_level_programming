@@ -19,3 +19,4 @@ All of the following files are programs written in Python except `betty`:
 | Filename                   | Description
 |:--------------------------:| ---------------------------------------------------------------------------------------------------
 | `0-run`                    | a Shell script that runs a Python script.
+| `1-run_inline`             | a Shell script that runs Python code.
