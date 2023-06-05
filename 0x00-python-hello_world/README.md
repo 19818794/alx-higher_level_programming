@@ -27,3 +27,4 @@ All of the following files are programs written in Python except `betty`:
 | `6-concat.py`              | edites a string and prints it.
 | `7-edges.py`               | utilizes indexing and slicing to print specific strings.
 | `8-concat_edges.py`        | utilizes indexing and slicing to print specific strings.
+| `9-easter_egg.py`          | imports modules.
