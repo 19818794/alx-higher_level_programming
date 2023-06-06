@@ -26,3 +26,4 @@ All of the following files are programs written in Python and C:
 | `5-print_comb2.py`          | prints numbers from 0 to 99.
 | `6-print_comb3.py`          | prints all possible different combinations of two digits.
 | `7-islower.py`              | checks for lowercase characters.
+| `8-uppercase.py`            | prints a string in uppercase followed by a new line.
