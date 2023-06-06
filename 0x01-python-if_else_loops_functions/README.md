@@ -28,3 +28,4 @@ All of the following files are programs written in Python and C:
 | `7-islower.py`              | checks for lowercase characters.
 | `8-uppercase.py`            | prints a string in uppercase followed by a new line.
 | `9-print_last_digit.py`     | prints the last digit of a number.
+| `10-add.py`                 | adds two integers and returns the result.
