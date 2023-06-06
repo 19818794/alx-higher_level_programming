@@ -35,3 +35,4 @@ All of the following files are programs written in Python and C:
 | `lists.h`                   | a header file includes the prototypes of all functions, libraries, and structures used in task `13-insert_number.c`.
 | `100-print_tebahpla.py`     | prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
 | `101-remove_char_at.py`     | creates a copy of the string, removing the character at position n.
+| `102-magic_calculation.py`  | a function does exactly the same as the proposed Python bytecode.
