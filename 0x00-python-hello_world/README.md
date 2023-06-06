@@ -14,7 +14,7 @@ C files are complied using gcc 9.4.0.
 
 # Files
 
-All of the following files are programs written in Python except `betty`:
+All of the following files are programs written in Python, C, and Shell:
 
 | Filename                   | Description
 |:--------------------------:| ---------------------------------------------------------------------------------------------------
