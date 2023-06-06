@@ -19,3 +19,4 @@ All of the following files are programs written in Python and C:
 | Filename                    | Description
 |:---------------------------:| ---------------------------------------------------------------------------------------------------
 | `0-positive_or_negative.py` | prints whether the number stored in the variable number is positive or negative.
+| `1-last_digit.py`           | prints the last digit of the number stored in the variable number.
