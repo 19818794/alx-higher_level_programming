@@ -31,3 +31,5 @@ All of the following files are programs written in Python and C:
 | `10-add.py`                 | adds two integers and returns the result.
 | `11-pow.py`                 | computes a to the power of b and returns the value.
 | `12-fizzbuzz.py`            | prints the numbers from 1 to 100, except multiples of 3 print Fizz and of 5 Buzz, and of both FizzBuzz separated by a space.
+| `13-insert_number.c`        | inserts a number into a sorted singly linked list.
+| `lists.h`                   | a header file includes the prototypes of all functions, libraries, and structures used in task `13-insert_number.c`.
