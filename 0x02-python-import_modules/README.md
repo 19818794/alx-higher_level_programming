@@ -22,3 +22,4 @@ All of the following files are programs written in Python:
 | `5-variable_load.py`        | imports the variable a from the file `variable_load_5.py` and prints its value.
 | `100-my_calculator.py`      | imports all functions from the file `calculator_1.py` and handles basic operations.
 | `101-easy_print.py`         | prints a string followed by a new line, in the standard output.
+| `102-magic_calculation.py`  | a function does exactly the same as the proposed Python bytecode.
