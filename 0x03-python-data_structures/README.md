@@ -26,3 +26,4 @@ All of the following files are programs written in Python and C:
 | `5-no_c.py`                        | removes all characters c and C from a string.
 | `6-print_matrix_integer.py`        | prints a matrix of integers.
 | `7-add_tuple.py`                   | adds 2 tuples.
+| `8-multiple_returns.py`            | returns a tuple with the length of a string and its first character.
