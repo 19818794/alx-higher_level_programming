@@ -31,3 +31,5 @@ All of the following files are programs written in Python and C:
 | `10-divisible_by_2.py`             | finds all multiples of 2 in a list.
 | `11-delete_at.py`                  | deletes the item at a specific position in a list.
 | `12-switch.py`                     | switches value of a and b.
+| `13-is_palindrome.c`               | a function in C that checks if a singly linked list is a palindrome.
+| `lists.h`                          | includes the prototypes of all functions, libraries, and structures used in task `13-is_palindrome.c`.
