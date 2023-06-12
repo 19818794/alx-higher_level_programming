@@ -14,7 +14,7 @@ C files are complied using gcc 9.4.0.
 
 # Files
 
-All of the following files are programs written in Python and C:
+All of the following files are programs written in Python, C, and CPython:
 
 | Filename                           | Description
 |:----------------------------------:| -----------------------------------------------------------------------------------------
@@ -33,3 +33,4 @@ All of the following files are programs written in Python and C:
 | `12-switch.py`                     | switches value of a and b.
 | `13-is_palindrome.c`               | a function in C that checks if a singly linked list is a palindrome.
 | `lists.h`                          | includes the prototypes of all functions, libraries, and structures used in task `13-is_palindrome.c`.
+| `100-print_python_list_info.c`     | a C function that prints some basic info about Python lists using Python version: 3.4 and OS: Ubuntu 14.04 LTS.

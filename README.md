@@ -26,8 +26,6 @@ What is the official Python coding style and how to check your code with pycodes
 
 # if/else, loops, functions
 
-Why Python programming is awesome
-
 Why indentation is so important in Python
 
 How to use the if, if ... else statements
@@ -60,8 +58,6 @@ What are the arithmetic operators and how to use them
 
 # import & modules
 
-Why Python programming is awesome
-
 How to import functions from another file
 
 How to use imported functions
@@ -73,3 +69,27 @@ How to use the built-in function dir()
 How to prevent code in your script from being executed when imported
 
 How to use command line arguments with your Python programs
+
+# Data Structures: Lists, Tuples
+
+What are lists and how to use them
+
+What are the differences and similarities between strings and lists
+
+What are the most common methods of lists and how to use them
+
+How to use lists as stacks and queues
+
+What are list comprehensions and how to use them
+
+What are tuples and how to use them
+
+When to use tuples versus lists
+
+What is a sequence
+
+What is tuple packing
+
+What is sequence unpacking
+
+What is the del statement and how to use it
