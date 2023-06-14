@@ -32,3 +32,4 @@ All of the following files are programs written in Python, C, and CPython:
 | `11-multiply_list_map.py`      | returns a list with all values multiplied by a number without using any loops.
 | `12-roman_to_int.py`           | converts a Roman numeral to an integer.
 | `100-weight_average.py`        | returns the weighted average of all integers tuples.
+| `101-square_matrix_map.py`     | computes the square value of all integers of a matrix using the map.
