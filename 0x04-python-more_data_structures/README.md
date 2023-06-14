@@ -29,3 +29,4 @@ All of the following files are programs written in Python, C, and CPython:
 | `8-simple_delete.py`           | deletes a key in a dictionary.
 | `9-multiply_by_2.py`           | returns a new dictionary with all values multiplied by 2.
 | `10-best_score.py`             | returns a key with the biggest integer value.
+| `11-multiply_list_map.py`      | returns a list with all values multiplied by a number without using any loops.
