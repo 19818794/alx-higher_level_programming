@@ -6,6 +6,7 @@ def safe_print_list(my_list=[], x=0):
         len_list += 1
     try:
         if x == 0:
+            print()
             return counter
         if x >= len_list:
             for item in my_list:
