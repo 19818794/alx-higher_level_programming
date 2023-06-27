@@ -18,3 +18,4 @@ All of the following files are programs written in Python:
 | `1-square.py`            | creates a private instance attribute.
 | `2-square.py`            | creates a private instance attribute with an optional size. 
 | `3-square.py`            | creates a public instance method.
+| `4-square.py`            | creates a property and property setter functions to access and update a private attribute.
