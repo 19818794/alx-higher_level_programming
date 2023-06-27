@@ -15,5 +15,6 @@ All of the following files are programs written in Python:
 | Filename                 | Description
 |:------------------------:| -----------------------------------------------------------------------------------------
 | `0-square.py`            | creates an empty class Square that defines a square.
-| `1-square.py`            | creates a class Square that defines a square by private instance attribute.
-| `2-square.py`            | creates a class Square that defines a square by private instance attribute.
+| `1-square.py`            | creates a private instance attribute.
+| `2-square.py`            | creates a private instance attribute with an optional size. 
+| `3-square.py`            | creates a public instance method.
