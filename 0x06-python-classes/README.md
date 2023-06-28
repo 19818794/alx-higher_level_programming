@@ -21,3 +21,4 @@ All of the following files are programs written in Python:
 | `4-square.py`            | creates a property and property setter functions to access and update a private attribute.
 | `5-square.py`            | creates a public instance method that returns the current square area.
 | `6-square.py`            | creates a private instance attribute, property and property setter functions.
+| `100-singly_linked_list.py` | inserts a new Node into the correct sorted position in the list (increasing order) and prints the entire singly linked list.
