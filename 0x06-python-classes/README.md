@@ -24,3 +24,4 @@ All of the following files are programs written in Python:
 | `100-singly_linked_list.py` | inserts a new Node into the correct sorted position in the list (increasing order) and prints the entire singly linked list.
 | `101-square.py`             | makes printing a Square instance should have the same behavior as my_print().
 | `102-square.py`             | makes Square instance can answer to comparators: ==, !=, >, >=, < and <= based on the square area.
+| `103-magic_class.py`        | defines a Python class MagicClass that does exactly the same as the provided Python bytecode. 
