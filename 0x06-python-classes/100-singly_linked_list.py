@@ -15,8 +15,8 @@ class Node:
             data (int): integer indicateing the value of the linked list node.
             next_node (Node): pointing on the address of the  next node.
         """
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
