@@ -45,3 +45,4 @@ All of the following files are programs written in Python and txt:
 | `20-answer.txt`   | `a = ()` Is `a` a tuple? Answer with Yes or No.
 | `21-answer.txt`   | `a = (1, 2)` Is `a` a tuple? Answer with Yes or No.
 | `22-answer.txt`   | `a = (1)` Is `a` a tuple? Answer with Yes or No.
+| `23-answer.txt`   | `a = (1, )` Is `a` a tuple? Answer with Yes or No.
