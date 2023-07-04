@@ -16,3 +16,5 @@ All of the following files are programs written in Python:
 |:-------------------------------:| ----------------------------------------------------------------------------------------- 
 | `0-add_integer.py`              | adds 2 integers.
 | `tests/0-add_integer.txt`       | interactive tests for the module `0-add_integer.py`.
+| `2-matrix_divided.py`           | divides all elements of a matrix.
+| `tests/2-matrix_divided.txt`    | interactive tests for the module `2-matrix_divided.py`.
