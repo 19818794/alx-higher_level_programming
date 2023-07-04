@@ -1,0 +1,25 @@
+# Python - Everything is object
+
+The aim of this project is to look a little bit closer at how Python works with different types of objects.
+
+This project is a little bit different than the usual projects.
+
+The first part is only questions about Python's specificity like "What would be the result of…".
+
+It's important to truly understand the reasons behind the answers of all those tasks so that we can apply the same logic to other variables and other variable types.
+
+Note that during interviews for Python positions, we will most likely have to answer to these type of questions.
+
+# Technologies
+
+Tested on Ubuntu 20.04 LTS.
+
+Python Scripts are written with python3 (version 3.8.5).
+
+# Files
+
+All of the following files are programs written in Python and txt:
+
+| Filename         | Description
+|:----------------:| -------------------------------------------------------------------------------------------------------------- 
+| `0-answer.txt`   | What function would you use to get the type of an object? Write the name of the function in the file, without ().
