@@ -1,0 +1,24 @@
+===================================
+test cases for 3-say_my_name module 
+===================================
+
+======================================
+a function that prints My name is <first name> <last name>.
+Prototype: ``def say_my_name(first_name, last_name=""):``
+first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string.
+======================================
+
+>>> # importing the ``say_my_name()`` function
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Jory", "Ray")
+My name is Jory Ray
+
+>>> say_my_name("Sona")
+My name is Sona 
+
+>>> say_my_name("", "")
+My name is  
+
+>>> say_my_name(" ")
+My name is   
