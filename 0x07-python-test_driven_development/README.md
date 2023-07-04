@@ -22,3 +22,5 @@ All of the following files are programs written in Python:
 | `tests/3-say_my_name.txt`       | interactive tests for the module `3-say_my_name.py`.
 | `4-print_square.py`             | prints a square with the character #.
 | `tests/4-print_square.txt`      | interactive tests for the module `4-print_square.py`.
+| `5-text_indentation.py`         | prints a text with 2 new lines after each of these characters: ., ? and :
+| `tests/5-text_indentation.txt`  | interactive tests for the module `5-text_indentation.py`.

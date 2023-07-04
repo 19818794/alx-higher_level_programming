@@ -1,0 +1,54 @@
+========================================
+test cases for 5-text_indentation module 
+========================================
+
+======================================
+a function that prints a text with 2 new lines after each of these characters: ., ? and :
+Prototype: def text_indentation(text):
+text must be a string, otherwise raise a TypeError exception with the message text must be a string
+There should be no space at the beginning or at the end of each printed line
+=======================================
+
+>>> # importing the ``text_indentation()`` function
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("He said: Hello. What's your name?")
+He said:
+<BLANKLINE>
+Hello.
+<BLANKLINE>
+What's your name?
+<BLANKLINE>
+
+>>> text_indentation(" : . ? ")
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+
+>>> text_indentation("\n:\n.\n?\n")
+<BLANKLINE>
+:
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation("  \nStart :  \n  End . \n\n What else? \n")
+<BLANKLINE>
+Start :
+<BLANKLINE>
+<BLANKLINE>
+  End .
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+ What else?
+<BLANKLINE>
+<BLANKLINE>
