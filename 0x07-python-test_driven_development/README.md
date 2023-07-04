@@ -26,3 +26,5 @@ All of the following files are programs written in Python:
 | `tests/5-text_indentation.txt`  | interactive tests for the module `5-text_indentation.py`.
 | `6-max_integer.py`              | finds the max integer in a list.
 | `tests/6-max_integer_test.py`   | unittests for the module `6-max_integer.py`.
+| `100-matrix_mul.py`             | multiplies 2 matrices.
+| `tests/100-matrix_mul.txt`      | interactive tests for the module `100-matrix_mul.py`.
