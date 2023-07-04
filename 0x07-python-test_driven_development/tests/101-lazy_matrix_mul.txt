@@ -1,0 +1,26 @@
+=========================================
+test cases for 101-lazy_matrix_mul module 
+=========================================
+
+======================================
+a function that multiplies 2 matrices by using the module NumPy.
+
+Prototype: ``def lazy_matrix_mul(m_a, m_b):``
+=======================================
+
+>>> # importing the ``lazy_matrix_mul()`` function
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+>>> module_doc = __import__('101-lazy_matrix_mul').__doc__
+>>> len(module_doc) > 3
+True
+
+>>> function_doc = lazy_matrix_mul.__doc__
+>>> len(function_doc) > 3
+True
+
+>>> lazy_matrix_mul([[1, 2], [3, 4], [5, 6]], [[1, 2, 3], [4, 5, 6]])
+[[9, 12, 15], [19, 26, 33], [29, 40, 51]]
+
+>>> lazy_matrix_mul([[1, 2, 3]], [[4, 5], [6, 7], [8, 9]])
+[[40, 46]]

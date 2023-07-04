@@ -28,3 +28,5 @@ All of the following files are programs written in Python:
 | `tests/6-max_integer_test.py`   | unittests for the module `6-max_integer.py`.
 | `100-matrix_mul.py`             | multiplies 2 matrices.
 | `tests/100-matrix_mul.txt`      | interactive tests for the module `100-matrix_mul.py`.
+| `101-lazy_matrix_mul.py`        | multiplies 2 matrices by using the module NumPy.
+| `tests/101-lazy_matrix_mul.txt` | interactive tests for the module `101-lazy_matrix_mul.py`.
