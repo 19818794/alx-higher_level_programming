@@ -55,3 +55,8 @@ All of the following files are programs written in Python and txt:
 | `101-locked_class.py` | creates a class LockedClass with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called `first_name`.
 | `103-line1.txt`       | `a = 1` `b = 1` Assuming we are using a CPython implementation of Python3 with default options/configuration. How many int objects are created by the execution of the first line of the script?
 | `103-line2.txt`       | `a = 1` `b = 1` Assuming we are using a CPython implementation of Python3 with default options/configuration. How many int objects are created by the execution of the second line of the script?
+| `104-line1.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` How many int objects are created by the execution of the first line of the script?
+| `104-line2.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` How many int objects are created by the execution of the second line of the script?
+| `104-line3.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` After the execution of line 3, is the int object pointed by a deleted? Answer with Yes or No?
+| `104-line4.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` After the execution of line 4, is the int object pointed by b deleted? Answer with Yes or No?
+| `104-line5.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` How many int objects are created by the execution of the last line of the script?
