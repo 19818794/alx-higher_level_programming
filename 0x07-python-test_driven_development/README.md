@@ -20,3 +20,5 @@ All of the following files are programs written in Python:
 | `tests/2-matrix_divided.txt`    | interactive tests for the module `2-matrix_divided.py`.
 | `3-say_my_name.py`              | prints a sentence.
 | `tests/3-say_my_name.txt`       | interactive tests for the module `3-say_my_name.py`.
+| `4-print_square.py`             | prints a square with the character #.
+| `tests/4-print_square.txt`      | interactive tests for the module `4-print_square.py`.
