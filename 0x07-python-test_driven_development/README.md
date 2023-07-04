@@ -24,3 +24,5 @@ All of the following files are programs written in Python:
 | `tests/4-print_square.txt`      | interactive tests for the module `4-print_square.py`.
 | `5-text_indentation.py`         | prints a text with 2 new lines after each of these characters: ., ? and :
 | `tests/5-text_indentation.txt`  | interactive tests for the module `5-text_indentation.py`.
+| `6-max_integer.py`              | finds the max integer in a list.
+| `tests/6-max_integer_test.py`   | unittests for the module `6-max_integer.py`.
