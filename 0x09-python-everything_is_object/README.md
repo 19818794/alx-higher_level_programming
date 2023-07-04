@@ -61,3 +61,8 @@ All of the following files are programs written in Python and txt:
 | `104-line4.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` After the execution of line 4, is the int object pointed by b deleted? Answer with Yes or No?
 | `104-line5.txt`       | `a = 1024` `b = 1024` `del a` `del b` `c = 1024` How many int objects are created by the execution of the last line of the script?
 | `105-line1.txt`       | `print("I")` `print("Love")` `print("Python")` Before the execution of line 2 (print("Love")), how many int objects have been created and are still in memory?
+| `106-line1.txt`       | `a = "SCHL"` `b = "SCHL"` `del a` del b` `c = "SCHL"` How many string objects are created by the execution of the first line of the script?
+| `106-line2.txt`       | `a = "SCHL"` `b = "SCHL"` `del a` del b` `c = "SCHL"` How many string objects are created by the execution of the second line of the script?
+| `106-line3.txt`       | `a = "SCHL"` `b = "SCHL"` `del a` del b` `c = "SCHL"` After the execution of line 3, is the string object pointed by a deleted? Answer with Yes or No?
+| `106-line4.txt`       | `a = "SCHL"` `b = "SCHL"` `del a` del b` `c = "SCHL"` After the execution of line 4, is the string object pointed by b deleted? Answer with Yes or No?
+| `106-line5.txt`       | `a = "SCHL"` `b = "SCHL"` `del a` del b` `c = "SCHL"` How many string objects are created by the execution of the last line of the script?
