@@ -51,3 +51,4 @@ All of the following files are programs written in Python and txt:
 | `26-answer.txt`   | What does this script print? `a = ()` `b = ()` `a is b`.
 | `27-answer.txt`   | `>>> id(a)` `139926795932424` `>>> a` `[1, 2, 3, 4]` `>>> a = a + [5]` `>>> id(a)`. Will the last line of this script print `139926795932424`? Answer with Yes or No.
 | `28-answer.txt`   | `>>> a` `[1, 2, 3]` `>>> id (a)` `139926795932424` `>>> a += [4]` `>>> id(a)` Will the last line of this script print 139926795932424? Answer with Yes or No.
+| `100-magic_string.py` | returns a string "BestSchool" n times the number of the iteration.
