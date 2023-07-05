@@ -27,6 +27,13 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertIsNone(max_integer([]))
 
+    def test_list_of_one_element(self):
+        """
+        checks if the function can handle a list of one element.
+        """
+        self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer([-1]), -1)
+
     def test_positive_integer(self):
         """
         checks if the function can give the highest positive integer.
