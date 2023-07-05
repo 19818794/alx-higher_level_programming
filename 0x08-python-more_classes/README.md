@@ -30,3 +30,4 @@ All of the following files are programs written in Python:
 | `7-rectangle.py` | creates a second public class attribute based on `6-rectangle.py`.
 | `8-rectangle.py` | creates a static method based on `7-rectangle.py`.
 | `9-rectangle.py` | creates a class method based on `8-rectangle.py`.
+| `101-nqueens.py` | creates a program that solves the N queens problem.
