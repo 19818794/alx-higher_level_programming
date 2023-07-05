@@ -24,3 +24,4 @@ All of the following files are programs written in Python:
 | `1-rectangle.py` | creates a class Rectangle with two private instance attributes, their properties and setters, and instantiation based on `0-rectangle.py`.
 | `2-rectangle.py` | creates two public instance methods based on `1-rectangle.py`.
 | `3-rectangle.py` | creates a string representation based on `2-rectangle.py`.
+| `4-rectangle.py` | creates `__repr__` function to be able to recreate a new instance by using eval() based on `3-rectangle.py`.
