@@ -25,3 +25,4 @@ All of the following files are programs written in Python:
 | `2-rectangle.py` | creates two public instance methods based on `1-rectangle.py`.
 | `3-rectangle.py` | creates a string representation based on `2-rectangle.py`.
 | `4-rectangle.py` | creates `__repr__` function to be able to recreate a new instance by using eval() based on `3-rectangle.py`.
+| `5-rectangle.py` | creates `__del__` function to print the message `Bye rectangle...` when an instance of Rectangle is deleted based on `4-rectangle.py`.
