@@ -23,3 +23,4 @@ All of the following files are programs written in Python:
 | `0-rectangle.py` | creates an empty class Rectangle that defines a rectangle.
 | `1-rectangle.py` | creates a class Rectangle with two private instance attributes, their properties and setters, and instantiation based on `0-rectangle.py`.
 | `2-rectangle.py` | creates two public instance methods based on `1-rectangle.py`.
+| `3-rectangle.py` | creates a string representation based on `2-rectangle.py`.
