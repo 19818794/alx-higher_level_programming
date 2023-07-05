@@ -28,3 +28,4 @@ All of the following files are programs written in Python:
 | `5-rectangle.py` | creates `__del__` function to print the message `Bye rectangle...` when an instance of Rectangle is deleted based on `4-rectangle.py`.
 | `6-rectangle.py` | creates a public class attribute based on `5-rectangle.py`.
 | `7-rectangle.py` | creates a second public class attribute based on `6-rectangle.py`.
+| `8-rectangle.py` | creates a static method based on `7-rectangle.py`.
