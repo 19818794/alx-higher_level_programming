@@ -30,3 +30,4 @@ All of the following files are programs written in Python:
 | `tests/100-matrix_mul.txt`      | interactive tests for the module `100-matrix_mul.py`.
 | `101-lazy_matrix_mul.py`        | multiplies 2 matrices by using the module NumPy.
 | `tests/101-lazy_matrix_mul.txt` | interactive tests for the module `101-lazy_matrix_mul.py`.
+| `102-python.c`                  | prints Python strings using Ubuntu 14.04 - Python 3.4.
