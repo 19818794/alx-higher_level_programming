@@ -19,8 +19,31 @@ True
 >>> len(function_doc) > 3
 True
 
->>> lazy_matrix_mul([[1, 2], [3, 4], [5, 6]], [[1, 2, 3], [4, 5, 6]])
-[[9, 12, 15], [19, 26, 33], [29, 40, 51]]
-
 >>> lazy_matrix_mul([[1, 2, 3]], [[4, 5], [6, 7], [8, 9]])
 [[40, 46]]
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+[[19, 22], [43, 50]]
+
+>>> lazy_matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6, 1], [7, 8, 2]])
+[[19, 22, 5], [43, 50, 11], [43, 50, 11]]
+
+>>> lazy_matrix_mul("Holberton", [[5, 6], [7, 8]])
+Traceback (most recent call last):
+...
+ValueError: Scalar operands are not allowed, use '*' instead
+
+>>> lazy_matrix_mul([[5, 6], [7, 8]], "Holberton")
+Traceback (most recent call last):
+...
+ValueError: Scalar operands are not allowed, use '*' instead
+
+>>> lazy_matrix_mul([[5, "6"], [7, 8]], [[5, 6], [7, 8]])
+Traceback (most recent call last):
+...
+TypeError: invalid data type for einsum
+
+>>> lazy_matrix_mul([[5, 6], [7, 8]], [[5, "6"], [7, 8]])
+Traceback (most recent call last):
+...
+TypeError: invalid data type for einsum

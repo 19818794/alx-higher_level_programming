@@ -15,4 +15,4 @@ def lazy_matrix_mul(m_a, m_b):
         m_b: the second list of lists of integers or floats.
     return: a new matrix.
     """
-    return np.dot(m_a, m_b).tolist()
+    return np.matmul(m_a, m_b).tolist()
