@@ -44,6 +44,9 @@ Traceback (most recent call last):
 ...
 NameError: name 'inf' is not defined
 
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], -float('inf'))
+[[-0.0, -0.0, -0.0], [-0.0, -0.0, -0.0]]
+
 >>> matrix_divided([[1, 2, 3], [4, 5]], 2)
 Traceback (most recent call last):
 ...
