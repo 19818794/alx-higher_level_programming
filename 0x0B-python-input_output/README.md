@@ -27,3 +27,4 @@ All of the following files are programs written in Python:
 | `10-student.py`            | edites a public method based on `9-student.py`.
 | `11-student.py`            | creates a public method based on `10-student.py`.
 | `12-pascal_triangle.py`    | returns a list of lists of integers representing Pascal’s triangle of n.
+| `100-append_after.py`      | inserts a line of text to a file after each line containing a specific string.
