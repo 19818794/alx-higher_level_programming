@@ -22,3 +22,5 @@ All of the following files are programs written in Python:
 | `4-inherits_from.py`        | creates a function that checks if the object is an instance of a class that was inherited (directly or indirectly) from the specified class.
 | `5-base_geometry.py`        | creates an empty class BaseGeometry.
 | `6-base_geometry.py`        | creates a class BaseGeometry based on `5-base_geometry.py` with a public instance method.
+| `7-base_geometry.py`        | creates a class BaseGeometry based on `6-base_geometry.py` with a second public instance method.
+| `tests/7-base_geometry.txt` | interactive tests for the module `7-base_geometry.py`.

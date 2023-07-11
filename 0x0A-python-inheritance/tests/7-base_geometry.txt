@@ -1,0 +1,160 @@
+=====================================
+test cases for 7-base_geometry module
+=====================================
+
+=====================================
+a class BaseGeometry (based on 6-base_geometry.py).
+Public instance method: def area(self): that raises an Exception with the message area() is not implemented
+Public instance method: def integer_validator(self, name, value): that validates value:
+you can assume name is always a string
+if value is not an integer: raise a TypeError exception, with the message <name> must be an integer
+if value is less or equal to 0: raise a ValueError exception with the message <name> must be greater than 0
+======================================
+
+==================
+BaseGeometry class
+==================
+
+>>> # importing the ``BaseGeometry`` class
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> # Checking class type
+>>> BG = BaseGeometry()
+>>> type(BG) == BaseGeometry
+True
+
+>>> # checking module docstring
+>>> module_docstring = __import__('7-base_geometry').__doc__
+>>> len(module_docstring) > 1
+True
+
+>>> # checking class docstring
+>>> class_docstring = __import__('7-base_geometry').BaseGeometry.__doc__
+>>> len(class_docstring) > 1
+True
+
+===========================
+area public instance method
+===========================
+
+>>> # checking if the area method is an instance method
+>>> type(BaseGeometry.__dict__['area'])
+<class 'function'>
+
+>>> # checking if the area method called via class with no arguments
+>>> BG.__class__.area()
+Traceback (most recent call last):
+...
+TypeError: area() missing 1 required positional argument: 'self'
+
+>>> #checking if area method is normal test
+>>> BG.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> # importing the ``area()`` function
+>>> area = __import__('7-base_geometry').BaseGeometry.area
+
+>>> # checking function docstring
+>>> function_docstring = area.__doc__
+>>> len(function_docstring) > 1
+True
+
+========================================
+integer_validator public instance method
+========================================
+
+>>> # checking if integer_validator is an instance method
+>>> type(BaseGeometry.__dict__['integer_validator'])
+<class 'function'>
+
+>>> # checking if integer_validator method called via class with no arguments
+>>> BG.__class__.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
+
+>>> # checking if integer_validator method called via class with 0 arguments
+>>> BG.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> # checking if integer_validator method called via class with too many arguments
+>>> BG.integer_validator(0,0,0)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> # importing the ``integer_validator()`` function
+>>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+
+>>> # checking function docstring
+>>> function_docstring = integer_validator.__doc__
+>>> len(function_docstring) > 1
+True
+
+>>> # checking integer_validator method with float vlue
+>>> BG.integer_validator("foo", 1.0)
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with string value
+>>> BG.integer_validator("foo", "arg")
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with list value
+>>> BG.integer_validator("foo", [1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with tuple value
+>>> BG.integer_validator("foo", (1, 2))
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with dictionary value
+>>> BG.integer_validator("foo", {1, 2, 3})
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with boolean value
+>>> BG.integer_validator("foo", True)
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with None value
+>>> BG.integer_validator("foo", None)
+Traceback (most recent call last):
+...
+TypeError: foo must be an integer
+
+>>> # checking integer_validator method with negative integer
+>>> BG.integer_validator("foo", -20)
+Traceback (most recent call last):
+...
+ValueError: foo must be greater than 0
+
+>>> # checking integer_validator method with 0 value
+>>> BG.integer_validator("foo", 0)
+Traceback (most recent call last):
+...
+ValueError: foo must be greater than 0
+
+>>> # checking integer_validator method with positive integer
+>>> BG.integer_validator("foo", 20)
+
+>>> # checking integer_validator method with empty string
+>>> BG.integer_validator("", 20)
+
+>>> # checking integer_validator method with None string
+>>> BG.integer_validator(None, 20)
+
