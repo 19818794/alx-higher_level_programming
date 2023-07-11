@@ -22,3 +22,4 @@ All of the following files are programs written in Python:
 | `5-save_to_json_file.py`   | writes an Object to a text file, using a JSON representation.
 | `6-load_from_json_file.py` | creates an Object from a "JSON file".
 | `7-add_item.py`            | adds all arguments to a Python list, and then saves them to a file.
+| `8-class_to_json.py`       | returns the dictionary description with a simple data structure (list, dictionary, string, integer, and boolean) for JSON serialization of an object.
