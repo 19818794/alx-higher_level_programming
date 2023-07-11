@@ -15,3 +15,5 @@ All of the following files are programs written in Python:
 | Filename                    | Description
 |:---------------------------:| ------------------------------------------------------------------------------------------------ 
 | `0-lookup.py`               | creates a function that returns the list of available attributes and methods of an object.
+| `1-my_list.py`              | creates a class MyList that inherits from the list.
+| `tests/1-my_list.txt`       | interactive tests for the module `1-my_list.py`.
