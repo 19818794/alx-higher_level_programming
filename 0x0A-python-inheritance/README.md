@@ -28,3 +28,4 @@ All of the following files are programs written in Python:
 | `9-rectangle.py`            | creates a class Rectangle based on `8-rectangle.py` to validate width and height integers, and get the area and string representation of a rectangle.
 | `10-square.py`              | creates a class Square that inherits from Rectangle `9-rectangle.py` to validate the size integer and get the area of the square.
 | `11-square.py`              | creates a class Square based on `10-square.py` to validate the size integer, and get the area and the string representation of the square.
+| `100-my_int.py`             | creates a class MyInt that inherits from int to define operators inverted.
