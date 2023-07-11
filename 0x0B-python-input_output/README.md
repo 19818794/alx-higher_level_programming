@@ -25,3 +25,4 @@ All of the following files are programs written in Python:
 | `8-class_to_json.py`       | returns the dictionary description with a simple data structure (list, dictionary, string, integer, and boolean) for JSON serialization of an object.
 | `9-student.py`             | creates a class Student that defines a student with 3 public instance attributes, and a public method.
 | `10-student.py`            | edites a public method based on `9-student.py`.
+| `11-student.py`            | creates a public method based on `10-student.py`.
