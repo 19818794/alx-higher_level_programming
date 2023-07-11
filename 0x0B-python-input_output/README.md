@@ -23,3 +23,4 @@ All of the following files are programs written in Python:
 | `6-load_from_json_file.py` | creates an Object from a "JSON file".
 | `7-add_item.py`            | adds all arguments to a Python list, and then saves them to a file.
 | `8-class_to_json.py`       | returns the dictionary description with a simple data structure (list, dictionary, string, integer, and boolean) for JSON serialization of an object.
+| `9-student.py`             | creates a class Student that defines a student with 3 public instance attributes, and a public method.
