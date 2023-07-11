@@ -21,3 +21,4 @@ All of the following files are programs written in Python:
 | `3-is_kind_of_class.py`     | creates a function that checks if the object is an instance of, or if the object is an instance of a class that is inherited from the specified class.
 | `4-inherits_from.py`        | creates a function that checks if the object is an instance of a class that was inherited (directly or indirectly) from the specified class.
 | `5-base_geometry.py`        | creates an empty class BaseGeometry.
+| `6-base_geometry.py`        | creates a class BaseGeometry based on `5-base_geometry.py` with a public instance method.
