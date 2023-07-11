@@ -26,3 +26,4 @@ All of the following files are programs written in Python:
 | `tests/7-base_geometry.txt` | interactive tests for the module `7-base_geometry.py`.
 | `8-rectangle.py`            | creates a class Rectangle that inherits from BaseGeometry `7-base_geometry.py` to validate width and height inetegers.
 | `9-rectangle.py`            | creates a class Rectangle based on `8-rectangle.py` to validate width and height integers, and get the area and string representation of a rectangle.
+| `10-square.py`              | creates a class Square that inherits from Rectangle `9-rectangle.py` to validate the size integer and get the area of the square.
