@@ -18,3 +18,4 @@ All of the following files are programs written in Python:
 | `1-my_list.py`              | creates a class MyList that inherits from the list.
 | `tests/1-my_list.txt`       | interactive tests for the module `1-my_list.py`.
 | `2-is_same_class.py`        | creates a function that checks if the object is exactly an instance of the specified class.
+| `3-is_kind_of_class.py`     | creates a function that checks if the object is an instance of, or if the object is an instance of a class that is inherited from the specified class.
