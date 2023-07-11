@@ -26,3 +26,4 @@ All of the following files are programs written in Python:
 | `9-student.py`             | creates a class Student that defines a student with 3 public instance attributes, and a public method.
 | `10-student.py`            | edites a public method based on `9-student.py`.
 | `11-student.py`            | creates a public method based on `10-student.py`.
+| `12-pascal_triangle.py`    | returns a list of lists of integers representing Pascal’s triangle of n.
