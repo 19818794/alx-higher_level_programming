@@ -15,7 +15,8 @@ def print_status(size, codes):
     """
     print("File size: {}".format(size))
     for i in sorted(codes):
-        print("{}: {}".format(i, codes[i]))
+        if codes[i] > 0:
+            print("{}: {}".format(i, codes[i]))
 
 
 if __name__ == "__main__":
@@ -35,12 +36,13 @@ if __name__ == "__main__":
             except (ValueError, IndexError):
                 pass
             try:
-                if int(line[-2]) in codes:
-                    if codes.get(int(line[-2]), -1) == -1:
-                        codes[int(line[-2])] = 1
+                code = int(line[-2])
+                if code in codes:
+                    if codes.get(code, -1) == -1:
+                        codes[code] = 1
                     else:
-                        codes[int(line[-2])] += 1
-            except IndexError:
+                        codes[code] += 1
+            except (ValueError, IndexError):
                 pass
         print_status(size, codes)
     except KeyboardInterrupt:
