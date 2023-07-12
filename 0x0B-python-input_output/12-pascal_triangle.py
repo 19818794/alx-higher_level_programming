@@ -11,8 +11,6 @@ def pascal_triangle(n):
         n (int): an integer.
     Return: an empty list if n <= 0.
     """
-    if n <= 0:
-        return [[]]
     rows = [[1 for j in range(i + 1)] for i in range(n)]
     for i in range(n):
         for j in range(i - 1):
