@@ -25,10 +25,26 @@ class Rectangle(Base):
             y: integer.
         """
         super().__init__(id)
+        self.validation("width", width)
         self.__width = width
+        self.validation("height", height)
         self.__height = height
+        self.validation("x", x)
         self.__x = x
+        self.validation("y", y)
         self.__y = y
+
+    def validation(self, name, value):
+        """
+        validates private instance attributes for all setter methods
+        and instantiation.
+        """
+        if not isinstance(value, int):
+            raise TypeError("{} must be an integer".format(name))
+        if (name == "width" or name == "height") and value <= 0:
+            raise ValueError("{} must be > 0".format(name))
+        if (name == "x" or name == "y") and value < 0:
+            raise ValueError("{} must be >= 0".format(name))
 
     @property
     def width(self):
@@ -42,6 +58,7 @@ class Rectangle(Base):
         """
         sets a value to the width.
         """
+        self.validation("width", value)
         self.__width = value
 
     @property
@@ -56,6 +73,7 @@ class Rectangle(Base):
         """
         sets a value to the height.
         """
+        self.validation("height", value)
         self.__height = value
 
     @property
@@ -70,6 +88,7 @@ class Rectangle(Base):
         """
         sets a value to the x.
         """
+        self.validation("x", value)
         self.__x = value
 
     @property
@@ -84,4 +103,5 @@ class Rectangle(Base):
         """
         sets a value to the y.
         """
+        self.validation("y", value)
         self.__y = value

@@ -27,6 +27,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(Rectangle.height.__doc__)
         self.assertTrue(Rectangle.x.__doc__)
         self.assertTrue(Rectangle.y.__doc__)
+        self.assertTrue(Rectangle.validation.__doc__)
 
     def test_inheritance(self):
         """
@@ -109,6 +110,81 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(hasattr(Rectangle, "height"))
         self.assertTrue(hasattr(Rectangle, "x"))
         self.assertTrue(hasattr(Rectangle, "y"))
+        self.assertTrue(hasattr(Rectangle, "validation"))
+
+    def test_validation_arguments(self):
+        """
+        checks validation arguments.
+        """
+        s0 = "validation() missing 2 required positional arguments: "
+        with self.assertRaises(TypeError) as e:
+            r17 = Rectangle(2, 3)
+            r17.validation()
+            self.assertEqual(s0 + "'name' and 'value'", str(e.exception))
+        s1 = "validation() missing 1 required positional argument: 'value'"
+        with self.assertRaises(TypeError) as e:
+            r17.validation("width")
+            self.assertEqual(s1, str(e.exception))
+        s2 = "validation() takes 3 positional arguments but 9 were given"
+        with self.assertRaises(TypeError) as e:
+            r17.validation("foo", 1, 2, 3, 4, 5, 6, 7)
+            self.assertEqual(s2, str(e.exception))
+
+    def test_validation_integer_type(self):
+        """
+        checks validation type of all setter methods.
+        """
+        with self.assertRaises(TypeError):
+            self.r1.height = "2"
+            self.r1.validation("2", "2")
+            self.r2.width = "hello"
+            self.r2.validation("hello", "hello")
+            self.r3.x = "world"
+            self.r3.validation("world", "world")
+            self.r4.y = "2"
+            self.r4.validation("2", "2")
+        with self.assertRaises(TypeError) as e:
+            r5 = Rectangle("hello", 2)
+            self.assertEqual("width must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            r6 = Rectangle(10, "hello")
+            self.assertEqual("height must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            r7 = Rectangle(10, 2, "hello")
+            self.assertEqual("x must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            r8 = Rectangle(10, 2, 0, "hello")
+            self.assertEqual("y must be an integer", str(e.exception))
+
+    def test_validation_integer_value(self):
+        """
+        checks validation value of all setter methods.
+        """
+        r9 = Rectangle(1, 2)
+        r10 = Rectangle(2, 3)
+        r11 = Rectangle(4, 5)
+        r12 = Rectangle(6, 7)
+        with self.assertRaises(ValueError):
+            r9.height = 0
+            r9.validation(0, 0)
+            r10.width = 0
+            r10.validation(0, 0)
+            r11.x = -1
+            r11.validation(-1, -1)
+            r12.y = -1
+            r12.validation(-1, -1)
+        with self.assertRaises(ValueError) as e:
+            r13 = Rectangle(0, 2)
+            self.assertEqual("width must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            r14 = Rectangle(10, 0)
+            self.assertEqual("height must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            r15 = Rectangle(1, 2, -1)
+            self.assertEqual("x must be >= 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            r16 = Rectangle(1, 2, 0, -1)
+            self.assertEqual("y must be >= 0", str(e.exception))
 
 
 if __name__ == '__main__':
