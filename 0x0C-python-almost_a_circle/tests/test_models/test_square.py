@@ -149,3 +149,14 @@ class TestSquare(unittest.TestCase):
         checks __str__ representation value.
         """
         self.assertEqual(self.sq2.__str__(), "[Square] (1) 0/0 - 20")
+
+    def test_size_attribute_wrong_type_value(self):
+        """
+        checks size attribute for wrong type or value.
+        """
+        with self.assertRaises(TypeError) as e:
+            sq3 = Square("foo")
+        self.assertEqual("width must be an integer", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            sq3 = Square(0)
+        self.assertEqual("width must be > 0", str(e.exception))
