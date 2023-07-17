@@ -29,6 +29,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(Rectangle.y.__doc__)
         self.assertTrue(Rectangle.validation.__doc__)
         self.assertTrue(Rectangle.area.__doc__)
+        self.assertTrue(Rectangle.display.__doc__)
 
     def test_inheritance(self):
         """
@@ -114,6 +115,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(hasattr(Rectangle, "y"))
         self.assertTrue(hasattr(Rectangle, "validation"))
         self.assertTrue(hasattr(Rectangle, "area"))
+        self.assertTrue(hasattr(Rectangle, "display"))
 
     def test_validation_arguments(self):
         """
@@ -198,6 +200,21 @@ class TestRectangleClass(unittest.TestCase):
         with self.assertRaises(TypeError) as e:
             self.r18.area("foo")
             self.assertEqual(s0, str(e.exception))
+
+    def test_display_argumets(self):
+        """
+        checks display arguments.
+        """
+        s0 = "display() takes 1 positional argument but 2 were given"
+        with self.assertRaises(TypeError) as e:
+            self.r18.display("foo")
+            self.assertEqual(s0, str(e.exception))
+
+    def test_display(self):
+        """
+        checks display value.
+        """
+        self.assertEqual(self.r18.display(), None)
 
 
 if __name__ == '__main__':

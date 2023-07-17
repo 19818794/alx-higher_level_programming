@@ -48,7 +48,7 @@ All of the following files are programs written in Python:
 |:--------------------------------:| -------------------------------------------------------------------------------------------- 
 | `models/__init__.py`             | creates an empty file inside `models` folder, so this folder will become a Python package.
 | `models/base.py`                 | creates a class  to manage id attribute in all your future classes and to avoid duplicating the same code.
-| `models/rectangle.py`            | creates a class Rectangle that inherits a public instance attribute object identifier from Base `models/base.py` and creates its private attributes with getter/setter to protect the Rectangle class attributes. Also, it creates a validation function of all setter methods and instantiation. It creates a public method that returns the area value of the Rectangle instance.
+| `models/rectangle.py`            | creates a class Rectangle that inherits a public instance attribute object identifier from Base `models/base.py` and creates its private attributes with getter/setter to protect the Rectangle class attributes. Also, it creates a validation function of all setter methods and instantiation. It creates a public method that returns the area value of the Rectangle instance. It creates a public method that prints in stdout the Rectangle instance with the character #.
 | `tests/__init__.py`              | creates an empty file inside `tests` folder, so this folder will become a Python package.
 | `tests/test_models/__init__.py`  | creates an empty file inside `tests/test_models` folder, so this folder will become a Python package.
 | `tests/test_models/test_base.py` | unittests for the module `models/base.py`.
@@ -57,6 +57,7 @@ All of the following files are programs written in Python:
 | `1-main.py`                           | main program 1.
 | `2-main.py`                           | main program 2.
 | `3-main.py`                           | main program 3.
+| `4-main.py`                           | main program 4.
 
 # File structure
 
@@ -76,3 +77,4 @@ All of the following files are programs written in Python:
 * 1-main.py
 * 2-main.py
 * 3-main.py
+* 4-main.py
