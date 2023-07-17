@@ -48,21 +48,27 @@ All of the following files are programs written in Python:
 |:--------------------------------:| -------------------------------------------------------------------------------------------- 
 | `models/__init__.py`             | creates an empty file inside `models` folder, so this folder will become a Python package.
 | `models/base.py`                 | creates a class  to manage id attribute in all your future classes and to avoid duplicating the same code.
+| `models/rectangle.py`            | creates a class Rectangle that inherits a public instance attribute object identifier from Base `models/base.py` and creates its private attributes with getter/setter to protect the Rectangle class attributes.
 | `tests/__init__.py`              | creates an empty file inside `tests` folder, so this folder will become a Python package.
 | `tests/test_models/__init__.py`  | creates an empty file inside `tests/test_models` folder, so this folder will become a Python package.
 | `tests/test_models/test_base.py` | unittests for the module `models/base.py`.
-| `0-main.py`                      | main program 0.
+| `tests/test_models/test_rectangle.py` | unittests for the module `models/rectangle.py`.
+| `0-main.py`                           | main program 0.
+| `1-main.py`                           | main program 1.
 
 # File structure
 
 * models:
-..* __init__.py
-..* base.py
+	* \_\_init\_\_.py
+	* base.py
+	* rectangle.py
 
 * tests:
-..* __init__.py
-..* test_models:
-....* __init__.py
-....* test_base.py
+	* \_\_init\_\_.py
+	* test_models:
+		* \_\_init\_\_.py
+		* test_base.py
+		* test_rectangle.py
 
 * 0-main.py
+* 1-main.py
