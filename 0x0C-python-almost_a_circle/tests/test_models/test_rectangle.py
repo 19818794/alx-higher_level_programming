@@ -33,6 +33,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(Rectangle.area.__doc__)
         self.assertTrue(Rectangle.display.__doc__)
         self.assertTrue(Rectangle.__str__.__doc__)
+        self.assertTrue(Rectangle.update.__doc__)
 
     def test_inheritance(self):
         """
@@ -121,6 +122,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(hasattr(Rectangle, "area"))
         self.assertTrue(hasattr(Rectangle, "display"))
         self.assertTrue(hasattr(Rectangle, "__str__"))
+        self.assertTrue(hasattr(Rectangle, "update"))
 
     def test_validation_arguments(self):
         """
@@ -253,6 +255,55 @@ class TestRectangleClass(unittest.TestCase):
         s0 = str_io.getvalue()
         output = "\n\n\n  ##\n  ##\n  ##\n"
         self.assertEqual(s0, output)
+
+    def test_update_effect_arguments(self):
+        """
+        checks update effect and arguments.
+        """
+        self.assertEqual(self.r19.__str__(), "[Rectangle] (5) 2/3 - 2/3")
+        self.r19.update()
+        self.assertEqual(self.r19.__str__(), "[Rectangle] (5) 2/3 - 2/3")
+        self.r19.update(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        self.assertEqual(self.r19.__str__(), "[Rectangle] (1) 4/5 - 2/3")
+        self.r19.update(11, 22, 33, 44, 55)
+        self.assertEqual(self.r19.__str__(), "[Rectangle] (11) 44/55 - 22/33")
+        self.assertEqual(self.r19.id, 11)
+        self.assertEqual(self.r19.width, 22)
+        self.assertEqual(self.r19.height, 33)
+        self.assertEqual(self.r19.x, 44)
+        self.assertEqual(self.r19.y, 55)
+
+    def test_update_wrong_arguments(self):
+        """
+        checks update with wrong arguments.
+        """
+        with self.assertRaises(TypeError) as e:
+            self.r19.update("foo")
+            self.assertEqual("id must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(1, "foo")
+            self.assertEqual("width must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(1, 2, "foo")
+            self.assertEqual("height must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(1, 2, 3, "foo")
+            self.assertEqual("x must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(1, 2, 3, 4, "foo")
+            self.assertEqual("y must be an integer", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(1, 0)
+            self.assertEqual("width must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(1, 2, 0)
+            self.assertEqual("height must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(1, 2, 3, -4)
+            self.assertEqual("x must be >= 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(1, 2, 3, 4, -4)
+            self.assertEqual("y must be >= 0", str(e.exception))
 
 
 if __name__ == '__main__':
