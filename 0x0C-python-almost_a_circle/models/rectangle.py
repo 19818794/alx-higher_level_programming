@@ -133,7 +133,7 @@ class Rectangle(Base):
                  self.id, self.__x, self.__y, self.__width, self.__height)
         return output
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         assigns an argument to each attribute.
         args:
@@ -144,6 +144,8 @@ class Rectangle(Base):
                 height: 3rd argument should be the height attribute.
                 x: 4th argument should be the x attribute.
                 y: 5th argument should be the y attribute.
+            **kwargs: this type of argument is called a "key-worded argument",
+                    argument order is not important.
         """
         if args is not None and len(args) != 0:
             if len(args) >= 1:
@@ -158,3 +160,17 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) > 4:
                 self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if type(value) != int and value is not None:
+                        raise TypeError("id must be an integer")
+                    self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value

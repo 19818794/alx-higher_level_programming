@@ -305,6 +305,59 @@ class TestRectangleClass(unittest.TestCase):
             self.r19.update(1, 2, 3, 4, -4)
             self.assertEqual("y must be >= 0", str(e.exception))
 
+    def test_update_kwargs(self):
+        """
+        checks update with kwargs.
+        """
+        self.r19.update(width=2)
+        self.assertEqual(self.r19.width, 2)
+        self.r19.update(height=1)
+        self.assertEqual(self.r19.height, 1)
+        self.r19.update(x=3)
+        self.assertEqual(self.r19.x, 3)
+        self.r19.update(y=5)
+        self.assertEqual(self.r19.y, 5)
+        self.r19.update(id=4)
+        self.assertEqual(self.r19.id, 4)
+        self.r19.update(y=2, height=3, x=4, id=1, width=5)
+        self.assertEqual(self.r19.id, 1)
+        self.assertEqual(self.r19.width, 5)
+        self.assertEqual(self.r19.height, 3)
+        self.assertEqual(self.r19.x, 4)
+        self.assertEqual(self.r19.y, 2)
+
+    def test_update_kwargs_wrong_arguments(self):
+        """
+        checks update with wrong arguments in kwargs.
+        """
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(width="foo")
+        self.assertEqual("width must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(height="foo")
+        self.assertEqual("height must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(x="foo")
+        self.assertEqual("x must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(y="foo")
+        self.assertEqual("y must be an integer", str(e.exception))
+        with self.assertRaises(TypeError) as e:
+            self.r19.update(id="foo")
+        self.assertEqual("id must be an integer", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(width=0)
+        self.assertEqual("width must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(height=0)
+        self.assertEqual("height must be > 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(x=-1)
+        self.assertEqual("x must be >= 0", str(e.exception))
+        with self.assertRaises(ValueError) as e:
+            self.r19.update(y=-1)
+        self.assertEqual("y must be >= 0", str(e.exception))
+
 
 if __name__ == '__main__':
     unittest.main()
