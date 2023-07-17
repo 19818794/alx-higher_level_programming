@@ -23,8 +23,9 @@ class Square(Rectangle):
             y: integer.
             id: identifier
         """
-        self.size = size
         super().__init__(size, size, x, y, id)
+        self.validation("width", size)
+        self.size = size
 
     def __str__(self):
         """
@@ -39,7 +40,7 @@ class Square(Rectangle):
         """
         retrieves the size.
         """
-        return self.__width
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -49,3 +50,39 @@ class Square(Rectangle):
         self.validation("width", value)
         self.__width = value
         self.__height = value
+
+    def update(self, *args, **kwargs):
+        """
+        assigns attributes.
+        args:
+            *args: is the list of arguments - no-keyworded arguments.
+                    id: 1st argument should be the id attribute.
+                    size: 2nd argument should be the size attribute.
+                    x: 3rd argument should be the x attribute.
+                    y: 4th argument should be the y attribute.
+            **kwargs: must be skipped if *args exists and is not empty. Each
+                key in this dictionary represents an attribute to the instance.
+        """
+        if args is not None and len(args) != 0:
+            if len(args) >= 1:
+                if type(args[0]) != int and args[0] is not None:
+                    raise TypeError("id must be an integer")
+                self.id = args[0]
+            if len(args) > 1:
+                self.size = args[1]
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if type(value) != int and value is not None:
+                        raise TypeError("id must be an integer")
+                    self.id = value
+                if key == "size":
+                    self.size = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
