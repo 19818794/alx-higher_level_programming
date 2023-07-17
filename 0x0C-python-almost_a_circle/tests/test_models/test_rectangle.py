@@ -28,6 +28,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(Rectangle.x.__doc__)
         self.assertTrue(Rectangle.y.__doc__)
         self.assertTrue(Rectangle.validation.__doc__)
+        self.assertTrue(Rectangle.area.__doc__)
 
     def test_inheritance(self):
         """
@@ -65,6 +66,7 @@ class TestRectangleClass(unittest.TestCase):
         cls.r2 = Rectangle(2, 10)
         cls.r3 = Rectangle(10, 2, 0, 0, 12)
         cls.r4 = Rectangle(5, 6, 7, 8)
+        cls.r18 = Rectangle(10, 2)
 
     def test_rectangle_private_instance_initiation(self):
         """
@@ -111,6 +113,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(hasattr(Rectangle, "x"))
         self.assertTrue(hasattr(Rectangle, "y"))
         self.assertTrue(hasattr(Rectangle, "validation"))
+        self.assertTrue(hasattr(Rectangle, "area"))
 
     def test_validation_arguments(self):
         """
@@ -185,6 +188,16 @@ class TestRectangleClass(unittest.TestCase):
         with self.assertRaises(ValueError) as e:
             r16 = Rectangle(1, 2, 0, -1)
             self.assertEqual("y must be >= 0", str(e.exception))
+
+    def test_area(self):
+        """
+        checks area value and arguments.
+        """
+        self.assertEqual(self.r18.area(), 20)
+        s0 = "area() takes 1 positional argument but 2 were given"
+        with self.assertRaises(TypeError) as e:
+            self.r18.area("foo")
+            self.assertEqual(s0, str(e.exception))
 
 
 if __name__ == '__main__':
