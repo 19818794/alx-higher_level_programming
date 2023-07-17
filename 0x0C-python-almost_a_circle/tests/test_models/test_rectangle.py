@@ -5,6 +5,8 @@ tests/test_models/test_rectangle is an unittests for Rectangle class.
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
+import io
+import contextlib
 
 
 class TestRectangleClass(unittest.TestCase):
@@ -69,6 +71,7 @@ class TestRectangleClass(unittest.TestCase):
         cls.r3 = Rectangle(10, 2, 0, 0, 12)
         cls.r4 = Rectangle(5, 6, 7, 8)
         cls.r18 = Rectangle(10, 2)
+        cls.r19 = Rectangle(2, 3)
 
     def test_rectangle_private_instance_initiation(self):
         """
@@ -216,7 +219,12 @@ class TestRectangleClass(unittest.TestCase):
         """
         checks display value.
         """
-        self.assertEqual(self.r18.display(), None)
+        str_io = io.StringIO()
+        with contextlib.redirect_stdout(str_io):
+            self.r18.display()
+        s0 = str_io.getvalue()
+        output = "##########\n##########\n"
+        self.assertEqual(s0, output)
 
     def test_str_arguments(self):
         """
@@ -232,6 +240,19 @@ class TestRectangleClass(unittest.TestCase):
         checks __str__ representation value.
         """
         self.assertEqual(self.r18.__str__(), "[Rectangle] (4) 0/0 - 10/2")
+
+    def test_display_with_x_y(self):
+        """
+        checks display value by taking care of x and y.
+        """
+        str_io = io.StringIO()
+        self.r19.x = 2
+        self.r19.y = 3
+        with contextlib.redirect_stdout(str_io):
+            self.r19.display()
+        s0 = str_io.getvalue()
+        output = "\n\n\n  ##\n  ##\n  ##\n"
+        self.assertEqual(s0, output)
 
 
 if __name__ == '__main__':
